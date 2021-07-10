@@ -1,0 +1,82 @@
+.create-quiz-page-container
+{
+    min-width: 500px;
+}
+
+.quiz-name
+{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.quiz-name label
+{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.quiz-name input
+{
+    font-family: 'Consolas';
+    height: 25px;
+    width: 45%;
+    font-size: 20px;
+    color : green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.description
+{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.description label
+{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.description textarea
+{
+    height: 50px;
+    width: 45%;
+    max-width: 45%;
+    max-height: 15vh;
+    font-size: 20px;
+    color : green;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.add-question-button
+{
+    width : 50%;
+    min-width: 350px;
+    height: 40px;
+    margin : 5% 0% 0% 10%;
+    font-size: large;
+    color : rgb(116, 116, 166);
+    background-color: white;
+    border: 1px solid rgb(176, 206, 233);
+    transition : color 150ms ease;
+    transition: background-color 250ms ease;
+}
+
+.add-question-button:hover
+{
+    color : black;
+    background-color: rgb(176, 206, 233);
+}
+
+.add-question-button:active
+{
+    color : white;
+}

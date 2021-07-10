@@ -1,0 +1,107 @@
+.options
+{   position: fixed;
+    display: flex;
+    top : 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* create */
+.create-button
+{
+    margin : 20px;
+    width : 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    
+    background : rgb(183, 212, 236);
+    color : rgb(143, 143, 143);
+    transition: color 150ms ease;
+}
+
+.create-button:hover
+{
+    color : black;
+}
+
+.create-button:active
+{
+    color : white;
+}
+
+.create-button .create-icon
+{
+    position : relative;
+    top : 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    
+}
+
+.create-button .text
+{
+    margin : 80px 0px 0px 45px;
+    position: relative;
+}
+
+/* copy */
+.copy-button
+{
+    margin : 20px;
+    width : 150px;
+    height: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    
+    background : rgb(190, 124, 221);
+    color : rgb(116, 116, 116);
+    transition: color 150ms ease;
+}
+
+.copy-button:hover
+{
+    color : black;
+}
+
+.copy-button:active
+{
+    color : white;
+}
+
+.copy-button .copy-icon
+{
+    position : relative;
+    top : 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    
+}
+
+.copy-button .text
+{
+    margin : 80px 0px 0px 45px;
+    position: relative;
+}
+
+/* my quizes */
+.tab-bar
+{
+    position: fixed;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top : 300px;
+    margin-left: 50px;
+}
+
+.tab-bar-button
+{
+     cursor: pointer;
+   font-size: 20px;
+   padding : 10px 20px;
+   margin : 5px;
+   border : none;
+   border-radius: 50px;
+}
+
