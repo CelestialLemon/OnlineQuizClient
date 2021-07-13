@@ -5,7 +5,7 @@ import '../CSS/Home.css'
 
 import TabButton from './Buttons/TabButton'
 
-const TabBar = () => {
+const TabBar = ({onActiveTabChange}) => {
 
     const [activeButton, setActiveButton] = useState('My Quizes');
 
@@ -19,6 +19,7 @@ const TabBar = () => {
     {
         console.log(currentActiveState);
         setActiveButton(currentActiveState);
+        onActiveTabChange(currentActiveState);
     }
 
     const inactiveButtonCSS = {

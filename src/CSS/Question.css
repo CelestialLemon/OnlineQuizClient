@@ -1,0 +1,83 @@
+.question-container
+{
+    margin: 20px 0px;
+    width : 80vw;
+    min-width: 500px;
+    padding : 20px 30px;
+    background-color: rgb(177, 213, 230);
+    word-wrap: normal;
+}
+
+.question-container .question-header
+{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.question-container .options-list
+{
+    margin-left: 5%;
+}
+
+.question-container .options-list .option-container
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.option-radio-button
+{
+    transform: scale(1.5);
+}
+
+.option-label
+{
+    font-family: 'Consolas';
+    font-size : 20px;
+    margin-left: 10px;
+}
+
+/* Question input css*/
+.question-container .question-header-input
+{
+    display: flex;
+}
+
+.question-container .question-header-input h3
+{
+    margin-right: 20px;
+}
+
+.question-container .question-header-input textarea
+{
+    padding : 5px 10px;
+    font-size: 20px;
+    width: 80%;
+    height: 100px;
+    max-height: 300px;
+}
+
+.question-container .options-list-input
+{
+    margin-left: 50px;
+    padding : 10px;
+}
+
+.question-container .option-container-input
+{
+    display: flex;
+    align-items: center;
+}
+
+.question-container .option-container-input textarea
+{
+    padding-top : 5px;
+    border : none;
+    margin-bottom: 10px;
+    width: 75%;
+    height: 40px;
+    max-height: 200px;
+    min-height: 40px;
+}

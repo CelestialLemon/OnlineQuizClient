@@ -1,0 +1,43 @@
+.page-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 10vw;
+    min-width: 800px;
+}
+
+.page-container .header
+{
+    
+    width: 80vw;
+    min-width: 600px;
+    background-color: rgb(177, 213, 230);
+    padding : 2% 5%;
+}
+
+.header .attempt-quiz-name
+{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.header .attempt-quiz-creator
+{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.header .attempt-quiz-description
+{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Consolas';
+}
+
+.submit-button
+{
+    width : 80vw;
+}
+
+

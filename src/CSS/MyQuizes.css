@@ -1,0 +1,39 @@
+.quizbar-container
+{
+    display: flex;
+    width: 80vw;
+    margin : 0px 0px 10px 0px;
+    min-width: 600px;
+    padding : 2px;
+    height: auto;
+    background-color: rgb(209, 218, 135);
+    align-items: center;
+    color : black
+}
+
+.quizbar-container .sr-no
+{
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.quizbar-container .button-group
+{
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.quizbar-container .button-group button
+{ 
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quizbar-container .button-group .icons
+{
+    transform: scale(1.25);
+    margin: 0px 5px 3px 0px;
+}
+
+
+

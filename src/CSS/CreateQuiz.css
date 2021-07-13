@@ -20,9 +20,9 @@
 .quiz-name input
 {
     font-family: 'Consolas';
-    height: 25px;
+    height: 30px;
     width: 45%;
-    font-size: 20px;
+    font-size: 25px;
     color : green;
     border-top: none;
     border-left: none;
@@ -45,6 +45,7 @@
 .description textarea
 {
     height: 50px;
+    min-height: 50px;
     width: 45%;
     max-width: 45%;
     max-height: 15vh;
@@ -58,7 +59,7 @@
 
 .add-question-button
 {
-    width : 50%;
+    width : 55%;
     min-width: 350px;
     height: 40px;
     margin : 5% 0% 0% 10%;
@@ -79,4 +80,9 @@
 .add-question-button:active
 {
     color : white;
+}
+
+.questions
+{
+    margin-left : 10%;
 }
