@@ -119,7 +119,7 @@ const AttemptQuiz = () => {
         </div>
     )
     else
-    return (<h3>Loading</h3>)
+    return (<h3>Loading...</h3>)
 }
 
 export default AttemptQuiz
