@@ -1,12 +1,15 @@
 import axios from 'axios';
 import React from 'react'
+
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import Question from '../components/Question';
 
 import '../CSS/AttemptQuiz.css'
 
 const AttemptQuiz = () => {
+
+    let history = useHistory();
     
     const { id } = useParams();
     const [quizData, setQuizData] = useState(null);
@@ -23,6 +26,20 @@ const AttemptQuiz = () => {
                 'headers' : {'authorization' : "Bearer " + (localStorage.getItem('accessToken') || sessionStorage.getItem('accessToken'))},
             })
             setQuizData(res.data);
+            console.log(res.data);
+        }catch(err)
+        {
+            console.log(err);
+        }
+    }
+
+    const CheckIfAlreadyAttempted = async () =>
+    {
+        try{
+            const res = await axios.get('http://localhost:4000/quiz/alreadyattempted/' + id,
+            {
+                'headers' : {'authorization' : 'Bearer ' + (localStorage.getItem('accessToken') || sessionStorage.getItem('accessToken'))}
+            })
             console.log(res.data);
         }catch(err)
         {
@@ -87,6 +104,7 @@ const AttemptQuiz = () => {
             {
                 'headers' : {'authorization' : 'Bearer ' + (localStorage.getItem('accessToken') || sessionStorage.getItem('accessToken'))}
             })
+            history.push('/quiz/attempt/' + id + '/submitted')
         }catch(err)
         {
             console.log(err)
@@ -102,6 +120,7 @@ const AttemptQuiz = () => {
     {
         FetchQuizData();
         InitializeAnswerArray();
+        CheckIfAlreadyAttempted();
     }, []);
     
     if(quizData)

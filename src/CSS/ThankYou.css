@@ -1,0 +1,40 @@
+.page-container-thank-you
+{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header
+{
+    min-width: 600px;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-color: rgb(186, 216, 243);
+}
+
+.header .submitted-successfully
+{
+    font-size: 45px;
+}
+
+.header .thank-you
+{
+    font-size: 20px;
+}
+
+.go-to-home-button
+{
+    margin : 20px;
+    display: flex;
+    align-items: center;
+}
+
+.go-to-home-button .icon
+{
+    transform: scale(1.5);
+    margin : 0px 10px;
+}

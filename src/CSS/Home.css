@@ -1,5 +1,7 @@
+
 .options
-{   position: fixed;
+{   
+    position: fixed;
     display: flex;
     top : 15%;
     left: 50%;

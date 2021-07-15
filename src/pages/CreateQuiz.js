@@ -1,11 +1,14 @@
 import axios from 'axios';
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { useHistory } from 'react-router-dom';
 import QuestionInput from '../components/QuestionInput';
 
 import '../CSS/CreateQuiz.css'
 
 const CreateQuiz = () => {
+
+    let history = useHistory();
 
     const [questionsJSX, setQuestionsJSX] = useState([]);
     const [quizName, setQuizName] = useState('');
@@ -15,6 +18,7 @@ const CreateQuiz = () => {
 
     const onAddQuestion = () =>
     {
+
         const temp = questionsJSX;
         const index = temp.length;
         temp.push(<QuestionInput 
@@ -66,16 +70,16 @@ const CreateQuiz = () => {
             {'headers': {'authorization' : 'Bearer ' + localStorage.getItem("accessToken")}});
 
             console.log(res.data);
+            if(res.data.msg == 'New Quiz created')
+            {
+                history.push('/quiz/create/' + res.data._id + '/created');
+            }
         }catch(err)
         {
             console.log(err);
         }
     }
 
-    const onDebugClick = () =>
-    {
-        console.log(questions);
-    }
 
 
     return (

@@ -1,0 +1,47 @@
+.page-container-quiz-created
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-quiz-created
+{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    padding : 20px;
+    background-color: rgb(177, 213, 230);
+    margin-top: 200px;
+}
+
+.header-quiz-created .label-quiz-created
+{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header-quiz-created .description-quiz-created
+{
+    font-weight: 100;
+    font-size: 28px ;
+}
+
+.buttons-quiz-created
+{
+    display: flex;
+    margin: 20px;
+}
+
+.buttons-quiz-created .share-button
+{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.buttons-quiz-created .go-to-home-button
+{
+    margin: 0px 10px;
+}
