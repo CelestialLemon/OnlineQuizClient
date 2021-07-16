@@ -1,0 +1,102 @@
+.my-responses-tab-container
+{
+    width: 80vw;
+    margin-top: 50px;
+    position: fixed;
+    top : 40%;
+    left : 5%;
+}
+
+.my-responses-tab-container .layout-icon
+{
+    float: right;
+    border-radius: 0px;
+    padding : 2px;
+    transform: scale(2.5);
+}
+
+.my-responses-gird-container
+{
+    margin-top: 20px;
+    display: flex;
+    height: 70vh;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.response-block-container
+{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    margin : 20px 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #45B29D;
+    transition: transform 200ms ease;
+}
+
+
+.response-block-container .quiz-name-my-responses
+{
+    color : white;
+    mix-blend-mode: difference;
+    margin-top: 40px;
+    min-height: 15%;
+    max-width: 230px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.response-block-container .creator-my-responses
+{
+    color : white;
+    max-width: 230px;
+    min-height: 20%;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.response-block-container .time-submitted-my-responses
+{
+    color : white;
+    max-width: 230px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.response-bar-container
+{
+    display : flex;
+    width: 60vw;
+    height: 60px;
+    margin: 5px 0px;
+    padding : 0px 10px;
+    align-items: center;
+    min-width: 600px;
+    color : white;
+}
+
+.response-bar-container .quiz-name-my-responses
+{
+    font-size: 28px;
+    margin-right: 5vw;
+    mix-blend-mode: difference;
+}
+
+.response-bar-container .creator-my-responses
+{
+    font-size: 19px;
+    font-weight: 100;
+    mix-blend-mode: difference;
+}
+
+.response-bar-container .time-submitted-my-responses
+{
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: 10px;
+    mix-blend-mode: difference;
+}

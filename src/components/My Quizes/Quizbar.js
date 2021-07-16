@@ -12,6 +12,7 @@ const Quizbar = ({quizName, quizIndex, id}) => {
     const [msg, setMsg] = useState('Click to copy link');
     const [isDeleted, setIsDeleted] = useState(false);
     const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+    
 
     const onShareClick = () =>
     {

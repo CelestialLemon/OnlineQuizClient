@@ -99,7 +99,9 @@ const AttemptQuiz = () => {
             console.log(answers);
             const res = await axios.post('http://localhost:4000/quiz/submit/' + id,
             {
-                'answers' : answers
+                'answers' : answers,
+                'creator' : quizData.creator,
+                'quizName' : quizData.quizName
             },
             {
                 'headers' : {'authorization' : 'Bearer ' + (localStorage.getItem('accessToken') || sessionStorage.getItem('accessToken'))}

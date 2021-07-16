@@ -10,6 +10,7 @@ import Copy from '../components/Buttons/Copy'
 import TabBar from '../components/TabBar'
 import axios from 'axios'
 import Quizbar from '../components/My Quizes/Quizbar'
+import MyResponsesTab from '../components/My Responses/MyResponsesTab'
 
 const Home = () => {
 
@@ -92,7 +93,7 @@ const Home = () => {
             <div className='my-quizes'>
                 {myQuizesJSX}
                 </div> : <></>}
-            {currentActiveTab == 'My Responses' ? <h3>My Responses Tab</h3> : <></>}
+            {currentActiveTab == 'My Responses' ? <MyResponsesTab></MyResponsesTab> : <></>}
         </div>
     )
 }

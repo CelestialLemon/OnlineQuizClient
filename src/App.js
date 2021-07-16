@@ -8,6 +8,7 @@ import CreateQuiz from './pages/CreateQuiz';
 import AttemptQuiz from './pages/AttemptQuiz';
 import ThankYou from './pages/ThankYou';
 import QuizCreated from './pages/QuizCreated';
+import ResponseBar from './components/My Responses/ResponseBar';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path='/quiz/attempt/:id/submitted' component={ThankYou}></Route>
           <Route exath path='/quiz/attempt/:id' component={AttemptQuiz}></Route>
           <Route exact path='/quiz/create/:id/created' component={QuizCreated}></Route>
+          <Route exact path='/temp' component={ResponseBar}></Route>
         </Switch>
       </Router>
     </div>
